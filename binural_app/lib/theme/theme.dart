@@ -20,3 +20,8 @@ const loginBtnDecoration = BoxDecoration(
   borderRadius: BorderRadius.all(Radius.circular(10)),
   color: secondaryColor,
 );
+
+const registerBtnDecoration = BoxDecoration(
+  borderRadius: BorderRadius.all(Radius.circular(10)),
+  color: linearColor1,
+);
