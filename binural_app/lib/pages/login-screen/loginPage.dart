@@ -7,8 +7,8 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
