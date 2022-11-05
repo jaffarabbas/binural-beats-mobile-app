@@ -1,5 +1,6 @@
 import 'package:binural_app/const/constants.dart';
 import 'package:binural_app/pages/login-screen/loginPage.dart';
+import 'package:binural_app/pages/register-screen/registerScreen.dart';
 import 'package:binural_app/theme/theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: maintheme,
-          home: const LoginPage(),
+          home: const RegisterScreen(),
         );
       },
     );
