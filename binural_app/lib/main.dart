@@ -1,4 +1,5 @@
 import 'package:binural_app/const/constants.dart';
+import 'package:binural_app/pages/dashboard-screen/dashboard-screen.dart';
 import 'package:binural_app/pages/login-screen/loginPage.dart';
 import 'package:binural_app/pages/register-screen/registerScreen.dart';
 import 'package:binural_app/theme/theme.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: maintheme,
-          home: const RegisterScreen(),
+          home: const DashBoardScreen(),
         );
       },
     );
