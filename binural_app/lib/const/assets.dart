@@ -8,3 +8,8 @@ const String s1 = "assets/images/slider/s1.png";
 const String s2 = "assets/images/slider/s2.png";
 const String s3 = "assets/images/slider/s3.png";
 
+//bottom nav
+const String home = "assets/bottomNavigation/home.svg";
+const String library = "assets/bottomNavigation/library.svg";
+const String profile = "assets/bottomNavigation/user.svg";
+
