@@ -16,6 +16,16 @@ const linearBackground = BoxDecoration(
   ),
 );
 
+const linearBackgroundSoundDetails = BoxDecoration(
+    gradient: LinearGradient(
+      begin: Alignment.topLeft,
+      end: Alignment(0.8, 0.0), // 10% of the width, so there are ten blinds.
+      colors: linearBackgroundColorSoundDetails, // red to yellow
+      tileMode: TileMode.clamp, // repeats the gradient over the canvas
+    ),
+    borderRadius: BorderRadius.only(
+        bottomLeft: Radius.circular(80), bottomRight: Radius.circular(80)));
+
 const linearBackgroundBottomNavigation = BoxDecoration(
   gradient: LinearGradient(
     begin: Alignment(0.0, 7.0),
@@ -39,8 +49,16 @@ const categoriesTextFeildDecoration = InputDecoration(
   hintStyle: TextStyle(
     color: secondaryColor,
   ),
-  prefixIcon: Icon(Icons.search,color: secondaryColor,size: 23,),
-  suffixIcon: Icon(Icons.mic,color: secondaryColor,size: 23,),
+  prefixIcon: Icon(
+    Icons.search,
+    color: secondaryColor,
+    size: 23,
+  ),
+  suffixIcon: Icon(
+    Icons.mic,
+    color: secondaryColor,
+    size: 23,
+  ),
   focusedBorder: InputBorder.none,
   enabledBorder: InputBorder.none,
   errorBorder: InputBorder.none,
