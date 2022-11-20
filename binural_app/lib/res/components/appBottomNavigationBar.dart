@@ -15,7 +15,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final changeBottomNavigationIndex =
-        Provider.of<ChnageBottomNavgationProvider>(context, listen: true);
+        Provider.of<ChangeBottomNavgationProvider>(context, listen: true);
 
     return Container(
       decoration: linearBackgroundBottomNavigation,
