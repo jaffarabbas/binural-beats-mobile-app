@@ -1,4 +1,5 @@
 import 'package:binural_app/res/colors.dart';
+import 'package:binural_app/utils/routes/routes_names.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -24,7 +25,9 @@ class _MainCardState extends State<MainCard> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: (){},
+      onTap: (){
+        Navigator.pushNamed(context, RoutesName.sound_details);
+      },
       child: Container(
         width: 134,
         margin: EdgeInsets.only(right: 14.sp),
