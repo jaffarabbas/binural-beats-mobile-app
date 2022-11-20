@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-class ChnageBottomNavgationProvider with ChangeNotifier{
+class ChangeBottomNavgationProvider with ChangeNotifier{
   var index = 1;
   void setIndex(int num){
     index = num;
