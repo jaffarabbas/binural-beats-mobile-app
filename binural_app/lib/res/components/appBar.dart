@@ -33,7 +33,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         isContainAction ? IconButton(
           onPressed: (){},
           icon: Padding(
-            padding: const EdgeInsets.only(top:8.0,right: 10),
+            padding: const EdgeInsets.only(right: 10),
             child: Icon(Icons.favorite),
           ),
         ) : Container()
