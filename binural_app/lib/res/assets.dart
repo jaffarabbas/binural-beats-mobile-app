@@ -13,3 +13,5 @@ const String home = "assets/bottomNavigation/home.svg";
 const String library = "assets/bottomNavigation/library.svg";
 const String profile = "assets/bottomNavigation/user.svg";
 
+//sound details
+const String download = "assets/images/download.svg";
