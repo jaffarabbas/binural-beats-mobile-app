@@ -1,11 +1,8 @@
 import 'package:binural_app/res/constants.dart';
-import 'package:binural_app/view/dashboard-screen/dashboard-screen.dart';
-import 'package:binural_app/view/home_view/home_view.dart';
-import 'package:binural_app/view/login_view/login_view.dart';
-import 'package:binural_app/view/register_view/register_view.dart';
+import 'package:binural_app/utils/routes/routes.dart';
+import 'package:binural_app/utils/routes/routes_names.dart';
 import 'package:binural_app/providers/changeBottomNavigationProvider.dart';
 import 'package:binural_app/res/theme/theme.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
@@ -19,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-          ChangeNotifierProvider(create: (_) => ChnageBottomNavgationProvider()),
+        ChangeNotifierProvider(create: (_) => ChangeBottomNavgationProvider()),
       ],
       child: Builder(
         builder: (context) {
@@ -31,7 +28,8 @@ class MyApp extends StatelessWidget {
               return MaterialApp(
                 debugShowCheckedModeBanner: false,
                 theme: maintheme,
-                home: const HomeView(),
+                initialRoute: RoutesName.sound_details,
+                onGenerateRoute: Routes.generateRoute,
               );
             },
           );
