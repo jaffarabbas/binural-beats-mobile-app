@@ -1,3 +1,4 @@
+import 'package:binural_app/providers/soundPlayerSliderProvider.dart';
 import 'package:binural_app/res/constants.dart';
 import 'package:binural_app/utils/routes/routes.dart';
 import 'package:binural_app/utils/routes/routes_names.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => ChangeBottomNavgationProvider()),
+        ChangeNotifierProvider(create: (_) => SoundPlayerSliderProvider()),
       ],
       child: Builder(
         builder: (context) {
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
               return MaterialApp(
                 debugShowCheckedModeBanner: false,
                 theme: maintheme,
-                initialRoute: RoutesName.sound_details,
+                initialRoute: RoutesName.sound_player,
                 onGenerateRoute: Routes.generateRoute,
               );
             },
