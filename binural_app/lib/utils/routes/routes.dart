@@ -4,6 +4,7 @@ import 'package:binural_app/view/home_view/home_view.dart';
 import 'package:binural_app/view/login_view/login_view.dart';
 import 'package:binural_app/view/notfound_view/notfound_view.dart';
 import 'package:binural_app/view/sound_details_screen/sound_detials_view.dart';
+import 'package:binural_app/view/sound_player_view/sound_player_view.dart';
 import 'package:binural_app/view/splash_view/splash_view.dart';
 import 'package:binural_app/utils/routes/routes_names.dart';
 import 'package:flutter/material.dart';
@@ -26,6 +27,9 @@ class Routes {
       case RoutesName.sound_details:
         return MaterialPageRoute(
               builder: (BuildContext context) => SoundDetailsView());
+      case RoutesName.sound_player:
+        return MaterialPageRoute(
+              builder: (BuildContext context) => SoundPlayerView());
       default:
         return MaterialPageRoute(
             builder: (BuildContext context) => NotFounView(page: routeSettings.name.toString(),));
