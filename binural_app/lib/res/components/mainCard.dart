@@ -4,6 +4,9 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:provider/provider.dart';
+
+import '../../providers/changeBottomNavigationProvider.dart';
 
 class MainCard extends StatefulWidget {
   late List<Color> color;
@@ -24,9 +27,13 @@ class _MainCardState extends State<MainCard> {
 
   @override
   Widget build(BuildContext context) {
+     final changeBottomNavigationIndex =
+        Provider.of<ChangeBottomNavgationProvider>(context, listen: true);
+
     return InkWell(
       onTap: (){
         Navigator.pushNamed(context, RoutesName.sound_details);
+        // changeBottomNavigationIndex.setIndex(3);
       },
       child: Container(
         width: 134,
