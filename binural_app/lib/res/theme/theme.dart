@@ -16,6 +16,17 @@ const linearBackground = BoxDecoration(
   ),
 );
 
+BoxDecoration CustomGradient(List<Color> colors) {
+  return (BoxDecoration(
+    gradient: LinearGradient(
+      begin: Alignment.topLeft,
+      end: Alignment(0.8, 0.0), // 10% of the width, so there are ten blinds.
+      colors: colors, // red to yellow
+      tileMode: TileMode.clamp, // repeats the gradient over the canvas
+    ),
+  ));
+}
+
 const linearBackgroundSoundDetails = BoxDecoration(
     gradient: LinearGradient(
       begin: Alignment.topLeft,
@@ -74,3 +85,10 @@ const registerBtnDecoration = BoxDecoration(
   borderRadius: BorderRadius.all(Radius.circular(10)),
   color: linearColor1,
 );
+
+//sound detials
+
+BoxDecoration soundPlayButtonDecoration = BoxDecoration(
+    color: secondaryColor,
+    borderRadius: BorderRadius.circular(40),
+    border: Border.all(width: 5.0, color: linearColor2));
