@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
               return MaterialApp(
                 debugShowCheckedModeBanner: false,
                 theme: maintheme,
-                initialRoute: RoutesName.sound_player,
+                initialRoute: RoutesName.favourite,
                 onGenerateRoute: Routes.generateRoute,
               );
             },
