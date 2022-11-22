@@ -8,4 +8,6 @@ class RoutesName{
   static const String sound_player = 'sound_player_view';
   static const String splash = 'splash_view';
   static const String profile = 'profile_view';
+  static const String favourite = 'favourite_view';
+  static const String saved = 'saved_view';
 }
