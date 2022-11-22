@@ -15,3 +15,7 @@ const String profile = "assets/bottomNavigation/user.svg";
 
 //sound details
 const String download = "assets/images/download.svg";
+const String loop = "assets/images/loop.svg";
+const String shuffle = "assets/images/shuffle.svg";
+const String back = "assets/images/back.svg";
+const String forward = "assets/images/forward.svg";
