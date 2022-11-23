@@ -19,17 +19,79 @@ class FavouriteView extends StatelessWidget {
       appBar: CustomAppBar(isContainAction: false),
       body: Container(
         decoration: linearBackground,
-        child: Column(
-          children: [
-            Container(
-              margin: EdgeInsets.only(top: 50.h),
-              child: Row(
-                children: [
-                  SecondaryCard(color: cardList[0], frequencfyInHurdz: [], spots: [])
-                ],
+        child: Container(
+          margin: EdgeInsets.only(top: 70.h),
+          padding: EdgeInsets.symmetric(horizontal: 20.w),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                padding: EdgeInsets.only(bottom: 20.h),
+                child: Text(
+                  'Favourite',
+                  style: TextStyle(
+                      fontSize: 30.sp,
+                      fontWeight: FontWeight.bold,
+                      color: secondaryColor),
+                ),
               ),
-            )
-          ],
+              Container(
+                height: 500.h,
+                padding: EdgeInsets.zero,
+                child: ListView.builder(
+                   padding: EdgeInsets.zero,
+                  shrinkWrap: true,
+                  itemCount: 50,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      margin: EdgeInsets.only(top: 10.h),
+                      padding: EdgeInsets.symmetric(vertical: 10.h),
+                      decoration: sampleCardDecoration,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          SecondaryCard(
+                              color: cardList[0],
+                              frequencfyInHurdz: [],
+                              spots: []),
+                          Container(
+                            // padding: EdgeInsets.only(left: 5.sp),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Sleep Binural',
+                                  style: TextStyle(
+                                      fontSize: 16.sp, color: secondaryColor),
+                                ),
+                                Text(
+                                  'Gama 430 Hz',
+                                  style: TextStyle(
+                                      fontSize: 13.sp, color: secondaryColor),
+                                ),
+                              ],
+                            ),
+                          ),
+                          InkWell(
+                            onTap: () {},
+                            child: Container(
+                              child: Icon(
+                                Icons.play_circle_fill,
+                                size: 50.sp,
+                                color: secondaryColor,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    );
+                  },
+                ),
+              )
+            ],
+          ),
         ),
       ),
       drawer: AppDrawer(),
