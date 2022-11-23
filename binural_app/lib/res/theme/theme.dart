@@ -2,6 +2,7 @@
 import 'package:binural_app/res/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 ThemeData maintheme =
@@ -92,3 +93,12 @@ BoxDecoration soundPlayButtonDecoration = BoxDecoration(
     color: secondaryColor,
     borderRadius: BorderRadius.circular(40),
     border: Border.all(width: 5.0, color: linearColor2));
+
+const sampleCardDecoration = BoxDecoration(
+  border: Border(
+    bottom: BorderSide(
+      color: secondaryColor,
+      width: 1
+    )
+  )
+);
