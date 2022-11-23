@@ -31,17 +31,17 @@ class _SecondaryCardState extends State<SecondaryCard> {
         Provider.of<ChangeBottomNavgationProvider>(context, listen: true);
 
     return Container(
-      width: 134,
+      width: 100,
       margin: EdgeInsets.only(right: 14.sp),
       // height: 320,
       child: Stack(
         children: <Widget>[
           AspectRatio(
-            aspectRatio: 0.90,
+            aspectRatio: 1.sp,
             child: DecoratedBox(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(
-                  Radius.circular(18),
+                  Radius.circular(10),
                 ),
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
@@ -202,7 +202,7 @@ class _SecondaryCardState extends State<SecondaryCard> {
       lineBarsData: [
         LineChartBarData(
           spots: const [
-            FlSpot(-1, 8),
+            FlSpot(-1, 5),
             FlSpot(2.6, 0),
             FlSpot(4.9, 5),
             FlSpot(6.8, 2.1),
