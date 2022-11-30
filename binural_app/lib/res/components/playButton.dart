@@ -1,5 +1,6 @@
 import 'package:binural_app/res/colors.dart';
 import 'package:binural_app/res/theme/theme.dart';
+import 'package:binural_app/utils/routes/routes_names.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -13,7 +14,9 @@ class PlayButton extends StatelessWidget {
     return Container(
       decoration: soundPlayButtonDecoration,
       child: IconButton(
-        onPressed: () {},
+        onPressed: () {
+        Navigator.pushNamed(context, RoutesName.sound_player);
+        },
         iconSize: 40.sp,
         icon: const Icon(
           Icons.play_arrow,
