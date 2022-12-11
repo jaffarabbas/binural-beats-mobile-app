@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 class RoutesName{
   static const String login = 'login_view';
   static const String register = 'register_view';
