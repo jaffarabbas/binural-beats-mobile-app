@@ -1,4 +1,5 @@
 const String logo = "assets/logo/l1.png";
+const String profile_main = "assets/images/profile.png";
 const String googleIcon = "assets/images/g.png";
 const String facebookIcon = "assets/images/f.png";
 const String primary_drawer_logo = "assets/appbar/appbarLogo.svg";

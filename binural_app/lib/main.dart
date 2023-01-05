@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
               return MaterialApp(
                 debugShowCheckedModeBanner: false,
                 theme: maintheme,
-                initialRoute: RoutesName.saved,
+                initialRoute: RoutesName.splash,
                 onGenerateRoute: Routes.generateRoute,
               );
             },
